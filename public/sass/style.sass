@@ -3,13 +3,16 @@
 body
     width: 80%
     margin: 0 auto
-    box-shadow: 0px 0px 2px black
+    box-shadow: 0px 0px 3px black
 
 .navbar
     background-color: $nav-color
     li
+       
         a
-            color: $nav-text
+            
+            font-size: 0.6vw
+           
 
 .banner, h2
     background-color: $myBlue
@@ -17,3 +20,37 @@ body
     border: none
 .mini-sect
     background-color: #eae3d6
+
+footer
+    background-color: $foot-color
+    color: white
+
+
+@media (min-width: 320px) and ( max-width: 767px )
+    body
+        width: 100%!important
+        box-shadow: 0 0 0
+    
+    img
+        width: 80%
+    
+    ul 
+        
+        li 
+           
+            a
+                font-size: 2.6vw!important
+    nav
+        flex-direction: column
+        div
+            width:20%
+@media (min-width: 768px) and ( max-width: 1023px )
+    ul 
+        margin: 0 auto
+        li 
+            text-align: center
+            
+            margin: 0 auto
+            a
+                
+                font-size: 1.2vw!important

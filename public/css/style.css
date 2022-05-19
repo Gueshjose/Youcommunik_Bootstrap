@@ -1,14 +1,14 @@
 body {
   width: 80%;
   margin: 0 auto;
-  box-shadow: 0px 0px 2px black;
+  box-shadow: 0px 0px 3px black;
 }
 
 .navbar {
   background-color: #1a1a1d;
 }
 .navbar li a {
-  color: #959596;
+  font-size: 0.6vw;
 }
 
 .banner, h2 {
@@ -19,6 +19,45 @@ body {
 
 .mini-sect {
   background-color: #eae3d6;
+}
+
+footer {
+  background-color: #393a3b;
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    width: 100% !important;
+    box-shadow: 0 0 0;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  ul li a {
+    font-size: 2.6vw !important;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  nav div {
+    width: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  ul {
+    margin: 0 auto;
+  }
+  ul li {
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul li a {
+    font-size: 1.2vw !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
